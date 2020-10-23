@@ -1,0 +1,20 @@
+xyzc.ini: [DISPLAY]GEOMETRY=CXYZ
+Rotations respect G5x,G92 offsets
+
+xyzc_legacy.ini: [DISPLAY]GEOMETRY=!CXYZ
+The '!' character selects legacy behavior
+with rotations applied with respect to
+machine zero position
+
+
+demo gcode file:
+[DISPLAY]OPEN_FILE=xyzc.ngc 
+demonstrates C rotations with and
+without G5x and G92 offsets
+
+Usage:
+1) F1 ---------- estop off
+2) F2 ---------- machine on
+3) Ctrl-Home --- Home All
+4) R ----------- Run program
+   when paused, S to continue

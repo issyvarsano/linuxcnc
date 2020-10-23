@@ -1312,6 +1312,14 @@ motion.feed-upm -- current feed in units per minute
 
 === Configs
 
+==== Inifile
+
+[DISPLAY]GEOMETRY settings that specify A,B,C axis letter
+rotations are displayed with respect to G5x,G92 offsets.
+Legacy behavior -- rotations about machine origin -- may
+be specified by including a '!' character in the GEOMETRY
+string.
+
 ==== Simulation Configs
 
 sim/configs/axis/axis_9axis: demonstrate simulated encoder index
